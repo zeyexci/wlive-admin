@@ -1,0 +1,58 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav [mode]="isLargeScreen() ? 'side' : 'over'" #sidenav position="start" (click)="sidenav.toggle()">
+    <div class="sidebar-header">
+      <h4>w-live</h4>
+      <mat-divider></mat-divider>
+    </div>
+    <div class="sidebar-list">
+      <ul class="list-unstyled">
+        <li matRipple [routerLink]="item.routerLink" *ngFor="let item of items; let i = index" [class.active]="selectedIndex === i"
+        (click)="setIndex(i)">
+          <div class="with-icon">
+            <mat-icon class="mr-3">{{item.icon}}</mat-icon>
+            <span>{{item.title}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="menu-spacer"></span>
+        <span class="toolbar-spacer"></span>
+        <button mat-flat-button>
+          <img class="mr-2 img-profile rounded-circle"
+            src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.0-9/91666704_106613634333934_2664912269548191744_n.jpg?_nc_cat=110&_nc_sid=7aed08&_nc_eui2=AeGyomFYCqSkPXQUvpwfIKNCBE6Rk6IBGHwETpGTogEYfJJfYwa73lSGotypsBqSR07knE6GT3jUj6HBenAUXZhU&_nc_ohc=SsDXO2h6_NoAX851HTE&_nc_ht=scontent.fmnl4-3.fna&oh=297b2760c50bef6fe65e3579f6adf16e&oe=5EDD44F8">
+          <span class="d-none d-lg-inline text-uppercase font-weight-bold" style="color: #202f5c;">Kapeng
+            Matapang</span>
+        </button>
+        <button mat-icon-button [matMenuTriggerFor]="notification">
+          <mat-icon matBadge="99" matBadgeColor="warn" matBadgeSize="small">notifications</mat-icon>
+        </button>
+        <mat-menu #notification="matMenu" class="custom-mat-menu mat-elevation-z8">
+          <div class="menu-header">Notifications</div>
+          <div class="notification-list">
+            <ul class="list-unstyled">
+              <li matRipple class="d-flex align-items-center" *ngFor="let notification of notifications">
+                <div class="mr-3" style="margin-top: 5px;">
+                  <mat-icon>{{notification.icon}}</mat-icon>
+                </div>
+                <div>
+                  <span class="text-truncate top-user-title-card negative-margin-bottom">{{notification.content}}</span>
+                  <div class="text-muted negative-margin-top"><small>{{notification.dateTime}}</small></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </mat-menu>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

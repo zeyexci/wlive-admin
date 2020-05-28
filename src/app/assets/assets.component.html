@@ -1,0 +1,28 @@
+<mat-tab-group class="remove-border-bottom">
+  <mat-tab label="Themes">
+    <ng-template matTabContent>
+      <div class="container-fluid py-2">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-4 col-6 py-3" *ngFor="let theme of themes">
+            <div matRipple class="card shadow">
+              <img [src]="theme.wallpaper" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Gifts">
+    <ng-template matTabContent>
+
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Aristocracy">
+    <ng-template matTabContent>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Badges">
+    <ng-template matTabContent>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

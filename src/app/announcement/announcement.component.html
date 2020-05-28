@@ -1,0 +1,30 @@
+<mat-tab-group class="remove-border-bottom">
+  <mat-tab label="Promotional Update">
+    <ng-template matTabContent>
+      <form>
+        <mat-form-field style="width: 100%;">
+          <textarea matInput rows="15" cols="45" value="Type Text"></textarea>
+        </mat-form-field>
+      </form>
+      <div class="float-right">
+        <button mat-raised-button class="default-btn">Post</button>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="System Announcement">
+    <ng-template matTabContent>
+      <form>
+        <mat-form-field style="width: 100%;">
+          <textarea matInput rows="15" value="Type Text"></textarea>
+        </mat-form-field>
+      </form>
+      <div class="float-right">
+        <button mat-raised-button class="default-btn">Post</button>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="History">
+    <ng-template matTabContent>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

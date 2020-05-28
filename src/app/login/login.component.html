@@ -1,0 +1,52 @@
+<body>
+  <div class="container">
+    <!-- Outer Row -->
+    <div class="row justify-content-center align-self-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden card-border shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 login-background">
+                <div class="meet-and-party">
+                  <img src="assets/img/wlive-meet-and-party.png" alt="meet and party">
+                </div>
+                <div class="p-5">
+                  <form style="padding-top: 60px;">
+                    <mat-form-field style="width: 100%;">
+                      <mat-label>{{idn}}</mat-label>
+                      <input matInput id="idno" required>
+                    </mat-form-field>
+                    <mat-form-field style="width: 100%;">
+                      <mat-label>{{pass}}</mat-label>
+                      <input type="password" id="pass" matInput required>
+                    </mat-form-field>
+                    <div class="py-2 forgot-acc">
+                      <div class="container" style="padding-bottom: 140px;">
+                        <div class="row align-items-center">
+                          <a routerLink="">Forgot Account?</a>
+                          <div class="ml-auto">
+                            <button routerLink="/dashboard" class="default-btn" mat-raised-button>{{login}}</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                <img src="assets/img/img.png">
+                <div class="custom-text">
+                  <h4>Welcome to W-Live</h4>
+                  <p style="margin: 0; padding: 0;">Login to access your account</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

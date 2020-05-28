@@ -1,0 +1,6 @@
+<div *ngIf="url === ''" id="content" style="width: 100%;">
+  <router-outlet></router-outlet>
+</div>
+<div *ngIf="url !== ''" id="content" style="width: 100%;">
+  <app-sidenav></app-sidenav>
+</div>

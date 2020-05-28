@@ -1,0 +1,46 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.notification-list ul {
+  padding: 10px;
+}
+
+.notification-list ul li {
+  padding-left: 10px;
+  display: block;
+  font-weight: bold;
+  min-height: 70px;
+  max-height: 70px;
+}
+
+.notification-list ul li:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+}
+
+.negative-margin-top {
+  margin-top: -5px;
+}
+
+.negative-margin-bottom {
+  margin-bottom: -5px;
+}
+
+.text-truncate {
+  width: 265px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,207 @@
+.card {
+  border-radius: 10px;
+}
+
+.sales-card-color {
+  background-color: #384592;
+}
+
+.sales-card-color:hover {
+  background-color: #58BFD3;
+  transition: all 0.5s;
+}
+
+.income-card-color {
+  background-color: #384592;
+}
+
+.income-card-color:hover {
+  background-color: #2E3462;
+  transition: all 0.5s;
+}
+
+.gifts-card-color {
+  background-color: #0098B5;
+}
+
+.gifts-card-color:hover {
+  background-color: #1C7889;
+  transition: all 0.5s;
+}
+
+.user-card-color {
+  background-color: #DEA449;
+}
+
+.user-card-color:hover {
+  background-color: #9D702B;
+  transition: all 0.5s;
+}
+
+.reports-card-color {
+  background-color: #914C57;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-title h5 {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.reports-icon {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.card-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users-card {
+  border-radius: 10px;
+}
+
+.card-header-title {
+  color: black;
+}
+
+.custom-text {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.top-user-card-avatar {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+}
+
+.top-user-card {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border-left: 0.30rem solid #141C5F !important;
+}
+
+.review {
+  height: 40px;
+  width: 100px;
+  margin-top: 5px;
+  color: white;
+  border-radius: 15px;
+  background-color: #339D25 !important;
+}
+
+.reviewed {
+  height: 40px;
+  width: 100px;
+  margin-top: 5px;
+  color: white;
+  border-radius: 15px;
+  background-color: #DEA449 !important;
+}
+
+.top-user-content-card {
+  margin: 0;
+  padding: 0;
+}
+
+.p-position p {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.flag-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+.flag-size {
+  height: 2rem;
+  width: 2rem;
+}
+
+.more-color {
+  color: #707070;
+}
+
+.total-numbers {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.total-users {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-card1 {
+  border-radius: 0px;
+  height: 20px;
+  background-color: #384592;
+}
+
+.custom-card2 {
+  border-radius: 0px;
+  height: 20px;
+  background-color: #0098B5;
+}
+
+.custom-card3 {
+  border-radius: 0px;
+  height: 20px;
+  background-color: #DEA449;
+}
+
+.square-box1 {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #384592;
+}
+
+.square-box2 {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #0098B5;
+}
+
+.square-box3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #DEA449;
+}
+
+@media (max-width: 768px) {
+  .p-position p {
+    margin-left: -15px;
+    font-size: 0.8rem;
+    margin-top: -5px;
+    margin-bottom: -5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .more-position {
+    position: fixed;
+    padding-left: 170px;
+  }
+}

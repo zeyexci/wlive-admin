@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #858796;
+  text-align: left;
+  background-color: #fff;
+}
+
+.login-background {
+  background: linear-gradient(to bottom right, #3bb5e6 0%, #fafcfc 100%);
+}
+
+.card-border {
+  border-radius: 10px;
+}
+
+.o-hidden {
+  overflow: hidden !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.meet-and-party {
+  padding: 30px;
+}
+
+.meet-and-party img {
+  width: 75px;
+}
+
+.form-group label {
+  color: black;
+}
+
+.forgot-acc a {
+  color: black;
+}
+
+.forgot-acc a:hover {
+  color: #202f5c;
+}
+
+.bg-login-image {
+  position: relative;
+}
+
+.bg-login-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.custom-text {
+  position: absolute;
+  padding-left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-text h4, p {
+  color: white;
+}
+
+
